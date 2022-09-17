@@ -1,17 +1,17 @@
 <template>
   <div>
     <TheHeader @sideNavToggle="displaySideNav = !displaySideNav" />
-    <TheSidenav :show="displaySideNav" @close="displaySideNav = false" />
+    <TheSideNav :show="displaySideNav" @close="displaySideNav = false" />
     <nuxt />
   </div>
 </template>
 <script>
 import TheHeader from "~/components/Navigation/TheHeader.vue";
-import TheSidenav from "~/components/Navigation/TheSidenav.vue";
+import TheSideNav from "~/components/Navigation/TheSideNav.vue";
 export default {
   components: {
     TheHeader,
-    TheSidenav,
+    TheSideNav,
   },
   data() {
     return {
